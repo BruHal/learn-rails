@@ -217,6 +217,7 @@ DEPENDENCIES
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
+  oauth2
   quiet_assets
   rails (= 4.2.1)
   rails_layout

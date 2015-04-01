@@ -45,6 +45,9 @@ end
 gem 'foundation-rails' 
 gem 'gibbon' 
 gem 'google_drive' 
+## Added oauth2 as GoogleDriveV0.login is deprecated and will be removed in the next version. 
+## Use GoogleDriveV0.login_with_oauth
+gem 'oauth2'
 gem 'high_voltage' 
 gem 'simple_form' 
 group :development do 

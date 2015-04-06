@@ -83,13 +83,16 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
+    address: "stbeehive.oracle.com",
+    port: 465,
     domain: Rails.application.secrets.domain_name,
-    authentication: "plain",
+    authentication: "login",
+    openssl_verify_mode: "none",
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_password
+    ssl: true,
+    user_name: Rails.application.secrets.email_oracle_username,
+    password: Rails.application.secrets.email_oracle_password
 }
+
 
 end
